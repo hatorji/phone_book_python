@@ -14,14 +14,14 @@ def get_data():
             last_name = input("Введите фамилию: ")
             if len(last_name) < 2:
                 raise NameError("Слишком короткая фамилия")
+            phone_number = input("Введите номер телефона: ")
             if len(phone_number) < 11:
                 raise NameError("Номер телефона должен быть не менее 11 символов")
         except NameError as err:
             print(err)
         else: 
             flag = True
-    last_name = "Иванов"
-    phone_number = "+7805675345"
+  
     return [first_name, last_name, phone_number]
 
 def create_file(file_name):
