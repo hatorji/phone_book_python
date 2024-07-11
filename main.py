@@ -111,8 +111,8 @@ def main():
             change_row(file_name)
         elif command == "m": # дополнение для ДЗ
             if not exists(new_file_name):
-                create_file(new_file_name)
+                create_file(new_file_name) # Создает новый целевой файл для клопирования
                 continue
-            move_to_new_file(file_name, new_file_name)
+            move_to_new_file(file_name, new_file_name) # Запускает функцию комирования заданной строки
 
 main()
